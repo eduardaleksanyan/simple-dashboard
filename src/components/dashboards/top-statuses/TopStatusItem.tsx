@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyledItem, StyledCountText, StyledStatusText } from "./styles";
 import { Status, statusColorMap } from "../../../constants/constants";
-import { darkColor, getStatusName } from "../../../utils/utils";
+import {capitalizeEachWord, darkColor, getStatusName} from "../../../utils/utils";
 
 interface Props {
     status: Status;
@@ -19,7 +19,7 @@ export default function TopStatusItem({ status, count }: Props) {
             }}
         >
             <StyledCountText variant="h5">{count}</StyledCountText>
-            <StyledStatusText variant="body2">{getStatusName(status)}</StyledStatusText>
+            <StyledStatusText variant="body2">{capitalizeEachWord(status)}</StyledStatusText>
         </StyledItem>
     );
 }
