@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyledItem, StyledCountText, StyledStatusText } from "./styles";
 import { Status, statusColorMap } from "../../../constants/constants";
-import {capitalizeEachWord, darkColor, getStatusName} from "../../../utils/utils";
+import { capitalizeEachWord, darkColor } from "../../../utils/utils";
 
 interface Props {
     status: Status;
